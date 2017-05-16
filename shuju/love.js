@@ -169,14 +169,14 @@
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "12px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText("←点击爱心", 23, 10);
+            ctx.fillText("← 横置屏幕 点击爱心", 23, 10);
             ctx.restore();
         },
         clear: function() {
             var ctx = this.tree.ctx, cirle = this.cirle;
             var point = cirle.point, scale = cirle.scale, radius = 26;
             var w = h = (radius * scale);
-            ctx.clearRect(point.x - w, point.y - h, 4 * w, 4 * h);
+            ctx.clearRect(point.x - w, point.y - h, 10 * w, 4 * h);
         },
         hover: function(x, y) {
             var ctx = this.tree.ctx;
